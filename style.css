@@ -13,7 +13,6 @@ body {
   font-family: var(--ff-primary);
 }
 header {
-  height: 100vh;
   background-color: var(--clr-primary);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -56,7 +55,6 @@ nav a:hover {
   cursor: pointer;
 }
 .hero-container {
-  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +76,7 @@ nav a:hover {
 .title-center {
   text-align: center;
   font-size: 2rem;
-margin-bottom:2.5rem;
+  margin-bottom: 2.5rem;
 }
 .hero-list {
   display: flex;
@@ -121,6 +119,7 @@ margin-bottom:2.5rem;
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -181,4 +180,18 @@ margin-bottom:2.5rem;
 #first,
 #first ~ p {
   color: #fff;
+}
+#card-sec {
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-text > h1 {
+    font-size: 2rem;
+  }
 }
