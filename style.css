@@ -184,6 +184,9 @@ nav a:hover {
 #card-sec {
   margin-top: 3rem;
 }
+.ham {
+  display: none;
+}
 @media only screen and (max-width: 980px) {
   nav {
     display: none;
@@ -192,6 +195,11 @@ nav a:hover {
     flex-direction: column;
   }
   .hero-text > h1 {
+    font-size: 2rem;
+  }
+  .ham {
+    display: block;
+    color: white;
     font-size: 2rem;
   }
 }
